@@ -87,7 +87,7 @@ body {
   color: rgb(9, 15, 80);
   pointer-events: none;
   transition: 0.5s;
-  letter-spacing: 0.5em;
+  /* letter-spacing: 0.5em; */
 }
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span {
