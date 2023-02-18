@@ -43,12 +43,17 @@ nav {
   display: flex !important;
   position: fixed;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.515);
+  background: rgba(255, 255, 255, 0.717);
   border-radius: 4px;
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   /* border: 1px solid rgb(255, 255, 255); */
+}
+#overlay{
+  height:100vh;
+  width:100vw;
+  background-color: #00000013;
 }
 .logo {
   width: 23vw;
@@ -231,10 +236,10 @@ section p {
   width: 31%;
   height: auto;
   position: absolute;
-  color: var(--black);
+  color:#000000;
   top: 30%;
   left: 5%;
-  background: rgba(133, 48, 39, 0.493);
+  background: rgba(255, 255, 255, 0.351);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   backdrop-filter: blur(5px);
@@ -253,6 +258,53 @@ section p {
   font-size: 18px;
   font-weight: 400;
   font-weight:main-aspect-ratio;
+}
+.dets button{
+  margin-bottom: 0%;
+}
+.dets a{
+  color:black;
+  font-weight: 500;
+  text-decoration: none;
+}
+#exp{
+  background: rgba(255, 255, 255, 0.129);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+.booking-form{
+  position: fixed;
+  right: 28px;
+  z-index: 3;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  margin-top: 15rem;
+  margin-right: 3rem;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.booking-form>h1{
+  font-size: 2.4rem;
+  color: var(--black);
+  font-weight: 600;
+}
+.booking-form>p{
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* margin-top: 15px; */
+}
+form{
+  height: auto;
 }
 .backvideo{
    position: absolute;
@@ -276,16 +328,25 @@ section p {
   
 
 #about {
+  z-index: 99;
+  height: 85vh;
   background-color: #8a8a8a;
   color: #000000;
 }
 
 #services {
+  z-index: 99;
   background-color: #a9a9a9;
   color: #000000;
 }
 
 #contact {
+  z-index: 99;
   background-color: #808080;
   color: #000000;
+}
+#coreteam{
+  z-index: 99;
+  height: 85vh;
+  background-color: #000641;
 }
