@@ -14,6 +14,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact/contact.css" />
+    <link rel="stylesheet" href="contact/contact1.css" />
+    <link rel="stylesheet" href="map/map1.css" />
+    <link rel="stylesheet" href="map/map.css" />
     <title>MOC Tech Pvt. Ltd.</title>
   </head>
   <body>
@@ -43,11 +46,12 @@
             <a href="#">Mandla</a>
           </div>
         </div>
-        <li><a href="contact/">Contact</a></li>
+        <li><a target="_blank" href="map/map.html ">Contact</a></li>
         <li><a href="./services.html">Services</a></li>
         <li>
           <button
             class="login-button"
+            target="_blank"
             onclick="window.open('./login/login.html','_self');"
           >
             Login
@@ -56,6 +60,7 @@
         <li>
           <button
             class="join-button"
+            target="_blank"
             onclick="window.open('./login/register.html','_self');"
           >
             Join
@@ -68,86 +73,190 @@
       <video autoplay muted loop plays-inline class="backvideo">
         <source src="video/mm.mp4" type="video/mp4" />
       </video>
-      <div id="home1">
-        <div class="dets">
-          <h1>
-            MOCTECH <br />
-            PRIVATE LIMITED
-          </h1>
-          <h4>
-            Book your four wheeler &amp; two wheeler for service/repair from
-            anywhere and check their working status on your mobile &amp; online
-            platform. <button id="exp"><a href="#">Explore Me</a></button>
-          </h4>
-        </div>
-      </div>
-      <div class="booking-form">
-        <h1>Want To Get Your Vehicles Best Care.</h1>
-        <p>Search for your vehicle</p>
-        <form method="post">
-          <input type="hidden" />
-          <select
-            class="round"
-            name="type"
-            hx-get="/get/brands/"
-            hx-trigger="change"
-            hx-target="#brands"
-          >
-            <option selected="">Select Type</option>
-            <option value="1">Two Wheeler</option>
-            <option value="2">Four Wheeler</option>
-          </select>
-          <div id="brands">
-            <select
-              class="round"
-              name="brands"
-              hx-get="/get/models/"
-              hx-trigger="change"
-              hx-target="#models"
-            >
-              <option selected="">Select Brand</option>
-            </select>
+      <div id="page1">
+        <img src="./images/bak1.jpg" alt="">
+          <div class="dets">
+              <h1>MOCTECH PRIVATE LIMITED</h1>
+              <h4>book your four wheeler & two wheeler for service/repair from anywhere and check their working status on your mobile & online platform. </h4>
           </div>
-          <div id="models">
-            <select class="round" name="model" required="">
-              <option selected="">Select Vehical Model</option>
-            </select>
+          <div class="booking-form">
+              <h1>Want To Get Your Vehicles Best Care.</h1>
+              <p>Search for your vehicle</p>
+              <form action="">
+                  <select class="round" name="type" id="type" required>
+                      <option selected disabled hidden value="">Type of Vehicle</option>
+                    </select>
+                  <select class="round" name="brand" id="brand" required>
+                      <option selected disabled hidden value="">Select Brand</option>
+                    </select>
+                  <select class="round" name="model" id="model" required>
+                      <option selected disabled hidden value="">Select Model</option>
+                  </select>
+                  <select class="round" name="fuel" id="fuel" required>
+                      <option selected disabled hidden value="">Select Fuel Type</option>
+                      <option value="Petrol">Petrol</option>
+                      <option value="Diesel">Diesel</option>
+                   </select>
+                   <input type="tel" name="phone" id="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+                   <input type="text" name="request" id="phone" placeholder="Special Request">
+                   <input id="submit" type="submit" value="Submit">
+              </form>
           </div>
-          <select class="round" name="fuel">
-            <option selected="">Select Fuel Type</option>
-            <option value="Petrol">Petrol</option>
-            <option value="Diesel">Diesel</option>
-          </select>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            pattern="[0-9]{10}"
-            required=""
-          />
-          <input type="text" name="request" placeholder="Special Request" />
-          <input id="submit" type="submit" value="Submit" />
-        </form>
       </div>
     </section>
-
     <section id="about">
       <h2>About Us</h2>
       <p>This is the about section.</p>
     </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>This is the about section.</p>
+      <!-- FOOTER -->
+      <div id="footer">
+        <footer class="footer">
+          <div class="footer__addr">
+            <img src="./images/moclogo.png" alt="Logo Image" />
+            <h1 class="footer__logo">MOCTech Pvt. Ltd.</h1>
+            <br />
+            <br />
+            <h3 style="text-decoration: underline">Contact :-</h3>
+            <br />
+            <!-- Uddate address , gmail , and phone no. -->
+            <address>
+              Corporate Office-219, Chinar Incube Business Centre, Hoshangabad
+              Road, Bhopal,Madhya Pradesh
+              <br />
+              <br />
+              Office Address:- 3117, C-Block, Surendra Landmark, Hoshangabad
+              Road, BHOPAL,Madhya Pradesh <br />
+              <br />
+              <a
+                class="footer__btn"
+                href="mailto:mechaniconclick@gmail.com"
+                style="text-decoration: underline"
+                ><h3>Email Us:-</h3></a
+              >
+              mechaniconclick@gmail.com <br /><br />
+              customercare@mechaniconclick.com
+              <a
+                class="footer__btn"
+                href="mailto:mechaniconclick@gmail.com"
+                style="text-decoration: underline"
+                ><h3>Phone No:-</h3></a
+              >
+              +91 8109656300 , +91 7553100156
+            </address>
+          </div>
+          <ul class="footer__nav">
+            <li class="nav__item nav__item--extra">
+              <h2 class="nav__title" style="color: red">Services</h2>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>This is the services section.</p>
-    </section>
-    <section id="coreteam">
-      <h2>core team</h2>
-      <p>This is our core team</p>
-    </section>
-    <section id="contact">
-     
-      <h2>contact</h2>
-      <p>This is our contact</p>
+              <ul class="nav__ul nav__ul--extra">
+                <li>Diagnostic Test</li>
+
+                <li>Engine Servicing</li>
+
+                <li>Tyres & Wheel Care</li>
+
+                <li>Automation</li>
+
+                <li>Oil Changing</li>
+
+                <li>Vacuam Cleaning</li>
+                <li>Denting & Painting</li>
+                <li>AC Services & Repair</li>
+                <li>Clutch & Body Parts</li>
+                <li>General Repairs</li>
+                <li>RSA Services</li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <h2 class="nav__title" style="color: red">Media</h2>
+              <!-- link all social media through link -->
+              <ul class="nav__ul">
+                <li>
+                  <a target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100085409284213&mibextid=ZbWKwL"
+                    ><i
+                      style="color: rgb(219, 217, 217)"
+                      class="ri-facebook-box-fill"
+                    >
+                      FaceBook</i
+                    ></a
+                  >
+                </li>
+
+                <li>
+                  <a target="_blank" href="https://youtube.com/@mechaniconclick">
+                    <i
+                      style="color: rgb(225, 225, 225)"
+                      class="ri-youtube-fill"
+                    >
+                      Youtube</i
+                    ></a
+                  >
+                </li>
+
+                <li>
+                  <a  target="_blank" href="#">
+                    <i
+                      style="color: rgb(193, 193, 193)"
+                      class="ri-linkedin-box-fill"
+                    >
+                      Linkedin</i
+                    ></a
+                  >
+                </li>
+
+                <li>
+                  <a target="_blank"
+                    href="https://instagram.com/mechanic_on_click?igshid=ZDdkNTZiNTM"
+                  >
+                    <i
+                      style="color: rgb(195, 195, 195)"
+                      class="ri-instagram-fill"
+                    >
+                      Instagram</i
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <h2 class="nav__title" style="color: red">Legal</h2>
+
+              <ul class="nav__ul">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Terms of Use</a>
+                </li>
+
+                <li>
+                  <a href="#">Sitemap</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="legal">
+            <p>&copy; 2023 mechaniconclick.com | All rights reserved.</p>
+
+            <div class="legal__links">
+              <span
+                >Made with <span class="heart">❤️</span> by our technical
+                team</span
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
