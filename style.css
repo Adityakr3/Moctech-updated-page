@@ -51,9 +51,10 @@ nav {
   /* border: 1px solid rgb(255, 255, 255); */
 }
 #overlay{
-  height:100vh;
+  height:110vh;
   width:100vw;
-  background-color: #00000057;
+  z-index: -1;
+  background-color: #00000063;
 }
 .logo {
   width: 23vw;
@@ -228,9 +229,9 @@ section p {
 #home {
   background-color: #ffffff;
 }
-.dets {
+.dets1 {
   width: 31%;
-  height: auto;
+  height: 51%;
   position: absolute;
   color:#000000;
   top: 30%;
@@ -244,16 +245,108 @@ section p {
   padding: 25px;
   z-index: 2;
 }
+.dets1 h2{
+  font-size: 34px;
+  font-weight: bold;
+}
+select {
+  background-color: white;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.round {
+  width: 100%;
+  margin-top: 5px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: var(--blue);
+  outline: 0;
+}
+
+input{
+  width: 100%;
+  background-color: white;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: var(--blue);
+  outline: 0;
+}
+input#submit{
+  background-color: #961f1f;
+  color: var(--white);
+  font-weight: 600;
+}
+.dets {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  color:#000000;
+  top: 30%;
+  left: 5%;
+  background: rgba(255, 255, 255, 0.351);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(216, 56, 56);
+  padding: 25px;
+  z-index: 2;
+}
 .dets h1 {
   padding-top: 0%;
   margin-bottom: 7%;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
 }
 .dets h4 {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 800;
-  color: #180d69;
+  color: #0b0631;
   font-weight:main-aspect-ratio;
 }
 .dets button{
@@ -276,7 +369,7 @@ section p {
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(127, 38, 38);
   padding: 25px;
 }
 #exp{
@@ -288,40 +381,12 @@ section p {
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-weight: bold;
 }
-.booking-form{
-  position: fixed;
-  right: 28px;
-  width: 30%;
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 4px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  margin-top: 15rem;
-  margin-right: 3rem;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid rgb(149, 149, 149);
-}
-.booking-form>h1{
-  font-size: 2.4rem;
-  color: var(--black);
-  font-weight: 600;
-}
-.booking-form>p{
-  color: var(--black);
-  font-size: 1.5rem;
-  font-weight: bold;
-  /* margin-top: 15px; */
-}
 form{
   height: auto;
 }
 .backvideo{
    position: absolute;
    right:0;
-   bottom: 0;
-   z-index: -1;
    visibility: var(--deepblue);
 }
 @media (min-aspect-ratio:16/9){
@@ -340,13 +405,13 @@ form{
 
 #about {
   z-index: 99;
-  height: 85vh;
   background-color: #8a8a8a;
   color: #000000;
 }
 
 #services {
   z-index: 99;
+  height: 100vh;
   background-color: #a9a9a9;
   color: #000000;
 }
@@ -357,6 +422,6 @@ form{
 }
 #coreteam{
   z-index: 99;
-  height: 85vh;
+  height: 100vh;
   background-color: #000641;
 }
