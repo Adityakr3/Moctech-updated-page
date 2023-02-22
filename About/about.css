@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+#about{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.pg-header img{
+    width: 184px;
+}
+
+h3.pg-header{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.64);
+}
+ h3.pg-header {
+  --c: #363636; 
+  --h: 1.2em;  
+  
+  line-height: var(--h);
+  color: #0000;
+  user-select: none;
+  font-weight: 600;
+    font-size: 2.1rem;
+    padding: 0 30px;
+  overflow: hidden;
+  padding: 10px 0 5px 30px;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) var(--c), 
+    0 calc(var(--h) - var(--_t,0em)) #fff;
+  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+}
+#about>h1{
+    width: 50%;
+    padding: 10px 350px;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #000000;
+}
+#about>h1>span{
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--red);
+}
+#about>p{
+    width: 66%;
+    padding: 0 250px;
+}
+#about .steps{
+    width: 60%;
+    display: flex;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 12px;
+    border: 4px solid rgb(13, 34, 102);
+}
+#about .steps .srno{
+    width: 10%;
+}
+#about .steps .srcont{
+    width: 90%;
+    padding: 0 10px;
+}
+#about .steps .srcont>h3{
+    font-weight: 600;
+    color: var(--deepblue);
+}
+#about .steps .srcont>p{
+    margin-top: 15px;
+}
+.srno img{
+    height: 66px;   
+}
+#steps1{
+    margin-left: 35%;
+}
