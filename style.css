@@ -415,13 +415,17 @@ form{
   background-color: #a9a9a9;
   color: #000000;
 }
-#contact {
-  z-index: 99;
-  background-color: #808080;
-  color: #000000;
-}
+@media(max--width:998px){
+  html{
+    font-size: 55%;
+  }
 #coreteam{
   z-index: 99;
   height: 100vh;
   background-color: #000641;
+}
+@media(max--width:698px){
+  html,body{
+    font-size: 45%;
+  }
 }
