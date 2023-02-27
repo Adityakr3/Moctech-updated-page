@@ -103,11 +103,14 @@ body{margin:0;}
 }
 #services>#carser>.h1{
   width: 32%;
-  height: 38px;
+  height: 48px;
   margin-left: 445px;
-  border-radius: 2px solid black;
-  background-color: rgb(235, 235, 235);
-  border: 3px  solid black
+  font-weight: 800;
+  font-size: 26px;
+  background-image: linear-gradient(45deg, #4d4bb4, #9f4343);
+  border-radius: 16px;
+  padding: 5px 8px;
+  text-align: center;
 }
 
 
@@ -125,11 +128,14 @@ body{margin:0;}
 }
 #services>#bikser>.h1{
   width: 38%;
-  height: 38px;
+  height: 48px;
   margin-left: 415px;
-  border-radius: 2px solid black;
-  background-color: rgb(235, 235, 235);
-  border: 3px  solid black
+  font-weight: 800;
+  font-size: 26px;
+  background-image: linear-gradient(45deg, #4d4bb4, #9f4343);
+  border-radius: 16px;
+  padding: 5px 8px;
+  text-align: center;
 }
 
 .grid-container {
