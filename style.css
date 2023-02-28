@@ -231,17 +231,17 @@ section p {
 }
 .dets1 {
   width: 31%;
-  height: 51%;
+  height: 58%;
   position: absolute;
   color:#000000;
-  top: 30%;
-  left: 5%;
+  top: 25%;
+  left: 65%;
   background: rgba(255, 255, 255, 0.351);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(122, 23, 23, 0.3);
   padding: 25px;
   z-index: 2;
 }
@@ -357,20 +357,43 @@ input#submit{
   font-weight: 500;
   text-decoration: none;
 }
-.dets1 {
-  width: 31%;
-  height: auto;
-  position: absolute;
-  color:#000000;
-  top:29%;
-  left: 65%;
-  background: rgba(255, 255, 255, 0.351);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgb(127, 38, 38);
-  padding: 25px;
+@media (max-width: 800px) {
+  .dets {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    color:#000000;
+    top: 25%;
+    left: 12.5%;
+    background: rgba(255, 255, 255, 0.351);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(216, 56, 56);
+    padding: 25px;
+    z-index: 2;
+  }
+  .dets h1 {
+    padding-top: 0%;
+    margin-bottom: 7%;
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .dets h4 {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0b0631;
+    font-weight:main-aspect-ratio;
+  }
+  .dets button{
+    margin-bottom: 0%;
+  }
+  .dets a{
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+  }
 }
 #exp{
   background: rgba(255, 255, 255, 0.129);
@@ -405,4 +428,208 @@ form{
     height: 100%;
     overflow: hidden;
     position: relative;
+}
+@media (max-width: 800px) {
+  .backvideo{
+    margin-top: 0%;
+    width:100%;
+    height:50%;
+  }
+  #overlay{
+      display: none;
+  }
+}
+@media (max-width: 800px)  {
+  .dets1 {
+    width: 75%;
+    height: 48%;
+    position: absolute;
+    color:#000000;
+    top: 50%;
+    left: 12.5%;
+    background: rgba(255, 255, 255, 0.351);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    z-index: 2;
+  }
+  .dets1 h2{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .dets1 p{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:  center;
+  }
+  select {
+    background-color: white;
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.2em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  select.round {
+    width: 100%;
+    margin-top: 3px;
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.round:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      radial-gradient(gray 70%, transparent 72%);
+    background-position:
+      calc(100% - 12px) 1em,
+      calc(100% - 16px) 1em,
+      calc(100% - .3em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: var(--blue);
+    outline: 0;
+  }
+  
+  input{
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  input:focus {
+    border-color: var(--blue);
+    outline: 0;
+  }
+  input#submit{
+    background-color: #961f1f;
+    color: var(--white);
+    font-weight: 600;
+  }
+}
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #ae4848;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .login-button{
+      font-size: 1.7rem;
+      color: white;
+      border-color: white;
+  }
+  .join-button{
+      font-size: 1.7rem;
+      color: white;
+      border-color: white;
+  }
+  .nav-links li a{
+      font-size: 1.7rem;
+      color: #f1f1f1;
+  }
+  .dropdown > .dropbtn > p{
+      font-size: 1.7rem;
+      color: #f1f1f1;
+      font-weight: bold;
+  }
+
+  .nav-links{
+      position: fixed;
+      /* background: linear-gradient(0deg, rgb(210, 140, 126) 0%, rgb(94, 108, 175) 100%); */
+      background: #004AAD;
+      height: 90vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+   .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -22%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }   
 }
