@@ -92,3 +92,96 @@ h3.pg-header{
 #steps1{
     margin-left: 35%;
 }
+
+@media (max-width: 800px) {
+#about{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.pg-header img{
+    width: 184px;
+}
+
+h3.pg-header{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.64);
+}
+ h3.pg-header {
+  --c: #363636; 
+  --h: 1.2em;  
+  
+  line-height: var(--h);
+  color: #0000;
+  user-select: none;
+  font-weight: 600;
+    font-size: 2.1rem;
+    padding: 0 30px;
+  overflow: hidden;
+  padding: 10px 0 5px 30px;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) var(--c), 
+    0 calc(var(--h) - var(--_t,0em)) #fff;
+  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+}
+#about>h1{
+    width: 50%;
+    padding: 10px 128px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000000;
+}
+#about>h1>span{
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--red);
+}
+#about>p{
+    width: 86%;
+    padding: 0 64px;
+    text-align: center;
+}
+#about .steps{
+    width: 58%;
+    height: 8%;
+    display: flex;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 12px;
+    border: 4px solid rgb(13, 34, 102);
+}
+#about .steps .srno{
+    width: 6%;
+}
+#about .steps .srcont{
+    width: 60%;
+    padding: 0 px;
+    font-size: 16px;
+}
+#about .steps .srcont>h3{
+    font-weight: 600;
+    color: var(--deepblue);
+}
+#about .steps .srcont>p{
+    margin-top: 15px;
+    font-size: .8rem;
+}
+.srno img{
+    height: 36px;   
+}
+#steps1{
+    margin-left: 6%;
+}
+}

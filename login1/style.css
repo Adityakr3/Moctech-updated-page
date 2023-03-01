@@ -394,7 +394,7 @@ h2 > span {
 @media screen and (max-width:425px) {
     .container {
         width: 300px;
-        height: 400px;
+        height: 450px;
         background-color: #fff;
         position: absolute;
         top: 150px;
@@ -428,7 +428,7 @@ h2 > span {
     }
     .content p  a {
         text-decoration: none;
-        color:#1FAB89;
+        color:#18386a;
         font-weight: bolder;
         font-size: 1rem;
         border: none;
@@ -446,7 +446,7 @@ h2 > span {
     }
     #form input {
         border:none;
-        border-bottom:3px solid #1FAB89;
+        border-bottom:3px solid#18386a;
         width: 250px;
         margin: 10px 0px;
         outline: none;
@@ -455,17 +455,17 @@ h2 > span {
         font-family: 'Comfortaa', cursive;
         font-weight: 800;  
     }
-    #btn{
+    #btn , #btn1{
         text-align: center;
-        padding:5px 20px ;
+        padding:5px 10px ;
         position: relative;
-        left: 60px;
         color: #fff;
-        background-color: #1FAB89;
+        background-color: #18386a;
         border:none;
         outline: none;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 21px;
+        margin-right: 41px;
         font-family: 'Comfortaa', cursive;
     }
     .other{
@@ -475,7 +475,7 @@ h2 > span {
 @media screen and (max-width:375px) {
     .container {
         width: 260px;
-        height: 350px;
+        height: 450px;
         background-color: #fff;
         position: absolute;
         top: 100px;
@@ -509,7 +509,7 @@ h2 > span {
     }
     .content p  a {
         text-decoration: none;
-        color:#1FAB89;
+        color:#1f2bab;
         font-weight: bolder;
         font-size: 1rem;
         border: none;
@@ -527,7 +527,7 @@ h2 > span {
     }
     #form input {
         border:none;
-        border-bottom:3px solid #1FAB89;
+        border-bottom:3px solid #18386a;
         width: 200px;
         margin: 10px 0px;
         outline: none;
@@ -536,19 +536,20 @@ h2 > span {
         font-family: 'Comfortaa', cursive;
         font-weight: 800;  
     }
-    #btn{
+    #btn,#btn1{
         text-align: center;
         padding:5px 20px ;
         position: relative;
         left: 40px;
         top: 10px;
         color: #fff;
-        background-color: #1FAB89;
+        background-color: #18386a;
         border:none;
         outline: none;
         border-radius: 5px;
         font-size: 18px;
         font-family: 'Comfortaa', cursive;
+        margin-left: 11px;
     }
     .other{
         display: none;
@@ -557,7 +558,7 @@ h2 > span {
 @media screen and (max-width:320px) {
     .container {
         width: 250px;
-        height: 400px;
+        height: 450px;
         background-color: #fff;
         position: absolute;
         top: 100px;
@@ -591,7 +592,7 @@ h2 > span {
     }
     .content p  a {
         text-decoration: none;
-        color:#1FAB89;
+        color:#1f39ab;
         font-weight: bolder;
         font-size: 1rem;
         border: none;
@@ -609,7 +610,7 @@ h2 > span {
     }
     #form input {
         border:none;
-        border-bottom:3px solid #1FAB89;
+        border-bottom:3px solid #18386a;
         width: 180px;
         margin: 10px 0px;
         outline: none;
@@ -618,13 +619,13 @@ h2 > span {
         font-family: 'Comfortaa', cursive;
         font-weight: 800;  
     }
-    #btn{
+    #btn #btn1{
         text-align: center;
         padding:5px 20px ;
         position: relative;
-        left: 60px;
+        left: 35px;
         color: #fff;
-        background-color: #1f55ab;
+        background-color: #18386a;
         border:none;
         outline: none;
         border-radius: 5px;

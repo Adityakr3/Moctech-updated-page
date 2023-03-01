@@ -95,6 +95,12 @@ nav {
   font-size: 18PX;
   font-weight: 600;
 }
+.dropdown .dropbtn p{
+  font-size: 19PX;
+  font-weight: 600;
+}
+
+
 .nav-links li a:hover {
   color: #ce1d1d;
 }
