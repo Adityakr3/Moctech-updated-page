@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.detspopup {
+    width: 45%;
+    height: 25%;
+    position: absolute;
+    color:#ffffff;
+    top: 30%;
+    left: 31%;
+    background-color: #ffffff;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 25px;
+    z-index: 12;
+    border-radius: 12px;
+  }
+  .detspopup button{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 120px;
+    background-color: #000000;
+    border: 0px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+} 
+.detspopup h1{
+    font-size:36PX;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+.detspopup h2{
+    margin-top: 8px;
+    font-size:28PX;
+    text-align: center;
+    font-weight: 900;
+    color: rgba(255, 0, 0, 0.672);
+}
+.detspopup img{
+        margin-left: 35rem;
+        cursor: pointer;
+        height: 3.5vh;
+}
+
+@media (max-width: 500px) {
+    .detspopup {
+        width: 65%;
+        height: 25%;
+        position: absolute;
+        color:#ffffff;
+        top: 30%;
+        left: 19%;
+        background-color: #ffffff;
+        border: 5px solid rgb(0, 0, 0);
+        padding: 25px;
+        z-index: 12;
+        border-radius: 12px;
+      }
+      .detspopup button{
+        display: block;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+        width: 120px;
+        background-color: #000000;
+        border: 0px;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+    } 
+    .detspopup h1{
+         margin-bottom: 22px;
+        font-size:26PX;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+    }
+    .detspopup h2{
+        /* margin-top: 8px; */
+        font-size:18PX;
+        text-align: center;
+        font-weight: 900;
+        color: rgba(255, 0, 0, 0.672);
+    }
+    .detspopup img{
+            margin-left: 9rem;
+            cursor: pointer;
+            height: 2.5vh;
+    }
+}

@@ -15,11 +15,11 @@
   <link rel="stylesheet" href="mar.css" />
   <link rel="stylesheet" href="About/about.css">
   <link rel="stylesheet" href="./our core team/css/swiper-bundle.min.css">
-   <link rel="stylesheet" href="./our core team/css/team.css">
-   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+  <link rel="stylesheet" href="./our core team/css/team.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+  <link rel="stylesheet" href="./yt-tutorials-main/style29.css">
   <title>MOC Tech Pvt. Ltd.</title>
 </head>
-
 <body>
   <nav>
     <div class="logo">
@@ -81,14 +81,13 @@
           platform.
         </h4>
       </div>
-      <div class="container">
-        <img src="Close-36.png" class="close" />
-        <h1>heading</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque quae illum inventore laborum quas,
-            expedita quaerat officia voluptates distinctio blanditiis ad impedit voluptas ipsa quo esse tempore. Iste,
-            officia?</p>
-            <button type="button">click me</button>
-    </div>
+      <div class="detspopup">
+        <img src="./images/close-2.png" class="close">
+        <h1>ALERT !</h1>
+        <h2>
+          our webiste under the maintenance.
+        </h2>
+      </div>
       <div class="dets1">
         <div class="booking-form">
           <h2>Want To Get Your Vehicles Best Care.</h2>
@@ -480,12 +479,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="./our core team/js/swiper-bundle.min.js"></script>
   <script src="./our core team/js/team.js"></script>
+  <script src="yt-tutorials-main/sixth.js"></script>
   <script>
     const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', ()=>{
+   hamburger.addEventListener('click', ()=>{
    //Animate Links
     navLinks.classList.toggle("open");
     links.forEach(link => {
