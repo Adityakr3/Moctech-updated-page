@@ -7,6 +7,6 @@ window.addEventListener("load" , function(){
         function open(event){
             document.querySelector(".detspopup").style.display = "block";
         },
-        2000
+        9000
     )
 });

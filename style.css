@@ -216,6 +216,43 @@ nav {
     pointer-events: all;
   }
 }
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+  .login-button {
+    font-size: 1.7rem;
+  }
+  .join-button {
+    font-size: 1.7rem;
+  }
+  .nav-links li a {
+    font-size: 1.7rem;
+    color: #f1f1f1;
+  }
+  .nav-links {
+    position: fixed;
+    background: linear-gradient(
+      0deg,
+      rgba(251, 129, 104, 1) 0%,
+      rgba(55, 85, 231, 1) 100%
+    );
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -22%);
+    pointer-events: all;
+  }
+}
+
 section {
   height: 100vh;
   display: flex;
